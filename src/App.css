@@ -1,0 +1,36 @@
+.App {
+  text-align: center; 
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Align images next to each other */
+}
+
+.cover-image {
+  display: block;
+  height: 315px; /* Image height */
+  transition: 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: white; /* White text */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text inside overlay */
+  font-size: 24px;
+  opacity: 0; 
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+

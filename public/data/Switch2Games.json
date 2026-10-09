@@ -1,0 +1,124 @@
+{
+    "games": [
+      {
+        "title": "Mario Kart World",
+        "devloper": "Nintendo",
+        "publisher": "Nintendo",
+        "date": "6/5/25",
+        "cover": "MarioKart.avif",
+        "price": 80.00,
+        "store": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
+        "trailer": "3pE23YTYEZM"
+      },
+      {
+        "title": "Donkey Kong Bananza",
+        "devloper": "Nintendo",
+        "publisher": "Nintendo",
+        "date": "7/17/25",
+        "cover": "DonkeyKong.avif",
+        "price": 70.00,
+        "store": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/",
+        "trailer": "mIddsPkdX9U"
+      },
+      {
+        "title": "The Legend of Zelda",
+        "devloper": "Nintendo",
+        "publisher": "Nintendo",
+        "date": "6/5/25",
+        "cover": "Zelda.avif",
+        "price": 80.00,
+        "store": "https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-tears-of-the-kingdom-nintendo-switch-2-edition-121504/",
+        "trailer": "dmDD7JSfhcE"
+      },
+      {
+        "title": "Kirby and The Forgotten Land",
+        "devloper": "Nintendo",
+        "publisher": "Nintendo",
+        "date": "8/28/25",
+        "cover": "Kirby.avif",
+        "price": 80.00,
+        "store": "https://www.nintendo.com/us/store/products/nintendo-switch-2-kirby-and-the-forgotten-land-nintendo-switch-2-edition-star-crossed-world-121526/",
+        "trailer": "Q5peJd37J-k"
+      },
+      {
+        "title": "Madden NFL 26",
+        "devloper": "EA Sports",
+        "publisher": "Electronic Arts",
+        "date": "8/14/25",
+        "cover": "Madden.avif",
+        "price": 70.00,
+        "store": "https://www.nintendo.com/us/store/products/ea-sports-madden-nfl-26-switch-2/",
+        "trailer": "EIp9SMjNH1w"
+      },
+      {
+        "title": "Split Fiction",
+        "devloper": "Hazelight Studios",
+        "publisher": "Electronic Arts",
+        "date": "6/5/25",
+        "cover": "Split.avif",
+        "price": 50.00,
+        "store": "https://www.nintendo.com/us/store/products/split-fiction-switch-2/",
+        "trailer": "JghiQgec0Nw"
+      },
+      {
+        "title": "Cyberpunk 2077",
+        "devloper": "CD Projekt Red",
+        "publisher": "CD Projekt Red",
+        "date": "6/25/25",
+        "cover": "Cyber.avif",
+        "price": 70.00,
+        "store": "https://www.nintendo.com/us/store/products/cyberpunk-2077-ultimate-edition-switch-2/",
+        "trailer": "ijqVBkgZ79Y"
+      },
+      {
+        "title": "Street Fighter 6",
+        "devloper": "Capcom",
+        "publisher": "Capcom",
+        "date": "6/5/25",
+        "cover": "Street.avif",
+        "price": 60.00,
+        "store": "https://www.nintendo.com/us/store/products/street-fighter-6-years-1-2-fighters-edition-switch-2/",
+        "trailer": "VafUG2-98tg"
+      },
+      {
+        "title": "Deltarune",
+        "devloper": "8-4",
+        "publisher": "8-4",
+        "date": "6/5/25",
+        "cover": "Delta.avif",
+        "price": 25.00,
+        "store": "https://www.nintendo.com/us/store/products/deltarune-switch-2/",
+        "trailer": "83-uYZHgQ6Y"
+      },
+      {
+        "title": "Yakuza 0",
+        "devloper": "Ryu ga Gotoku",
+        "publisher": "Sega",
+        "date": "6/5/25",
+        "cover": "Yakuza.avif",
+        "price": 50.00,
+        "store": "https://www.nintendo.com/us/store/products/yakuza-0-directors-cut-switch-2/",
+        "trailer": "MQN8fBLhKCI"
+      },
+      {
+        "title": "HITMAN",
+        "devloper": "IO Interactive",
+        "publisher": "IO Interactive",
+        "date": "6/5/25",
+        "cover": "Hitman.avif",
+        "price": 60.00,
+        "store": "https://www.nintendo.com/us/store/products/hitman-world-of-assassination-signature-edition-switch-2/",
+        "trailer": "XA8B1WgNcdc"
+      },
+      {
+        "title": "Sonic X Shadow Generations",
+        "devloper": "Sonic Team",
+        "publisher": "Sega",
+        "date": "6/5/25",
+        "cover": "Sonic.avif",
+        "price": 50.00,
+        "store": "https://www.nintendo.com/us/store/products/sonic-x-shadow-generations-switch-2/",
+        "trailer": "qzW_uuctHQU"
+      }
+    ]
+    }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Game Project</title>
+</head>
+
+<style>
+    /* Custom font style */
+    @font-face {
+        font-family: myFont;
+        src: url(Fonts/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf);
+    }
+
+    h1 {
+        font-family: myFont;
+    }
+
+    body {
+        background-color: red;
+        color: aliceblue;
+    }
+
+    /*Hover effect on image */
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .cover-image {
+        display: block;
+        height: 315px;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Overlay text shown when hovering on the image */
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    /* Show overlay text on image */
+    .image-container:hover .image-overlay {
+        opacity: 1;
+    }
+
+</style>
+
+<body>
+    <h1>Vue Switch 2 Games Preorders</h1>
+    <br />
+    <a href="index.html">React version</a> <!-- Link to React version -->
+    <br /><br />
+    <div id="vue">
+        <!-- Dropdown for selecting games -->
+        <select v-model="gamesIndex">
+            <option v-for="(aGame, index) in games" :value="index">
+                {{aGame.title}}
+            </option>
+        </select>
+        <br />
+        <span>Developer: </span> &nbsp; <span><b>{{games[gamesIndex]?.devloper}}</b></span>
+        <span>Publisher: </span> &nbsp; <span><b>{{games[gamesIndex]?.publisher}}</b></span>
+        <br />
+        <span>Release Date: </span><span><b>{{games[gamesIndex]?.date}} </b></span>
+        <span>Price: $ </span><span><b>{{games[gamesIndex]?.price}}</b></span>
+        <br />
+        <a target="_blank" :href=games[gamesIndex]?.store>Nintendo Store</a>
+        <br />
+        <!-- Game image and overlay -->
+        <div class="image-container">
+            <img class="cover-image" :src="`images/${games[gamesIndex]?.cover}`" height="315" />
+            <div class="image-overlay">Only on Nintendo Switch 2</div>
+        </div> &nbsp;
+
+        <!--Trailer-->
+        <iframe width="420" height="315" :src="`https://www.youtube.com/embed/${games[gamesIndex]?.trailer}`"></iframe>
+        <br />
+        <h2>Add games to cart</h2>
+        <!-- Loop to display checkboxes for each game -->
+        <span v-for="(aGame, index) in games" v-on:change="sort_games">
+            <input type="checkbox" :id="aGame.title" :value="index" v-model="selectedIndices">
+            <label :for="aGame.title">{{aGame.title}}</label>
+            <br />
+        </span>
+
+        <h2>Games in cart | Total {{total}}</h2>
+        <!-- Display selected game images in cart -->
+        <span v-for="(index,i) in selectedIndices">
+            <img :src="`images/${games[index]?.cover}`" height="150" />
+        </span>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="some_vue.js"></script> 
+</body>
+
+</html>
