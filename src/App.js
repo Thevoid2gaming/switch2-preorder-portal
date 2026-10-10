@@ -26,18 +26,17 @@ function App() {
   }
 
   const handleCheckChange = (event) => {
-    if (event.target.checked) {
-      // Add game price to total and update selected games
-      setSelectedIndices(selectedIndices => [...selectedIndices, parseInt(event.target.value)].sort((a, b) => a - b));
-      let newTotal = total + games[event.target.value]["price"];
-      setTotal(newTotal);
-    } else {
-      // Remove game from selected list and update total
-      setSelectedIndices(selectedIndices.filter(item => item !== parseInt(event.target.value)));
-      let newTotal = total - games[event.target.value]["price"];
-      setTotal(newTotal);
-    }
-  };
+  const itemIndex = parseInt(event.target.value, 10);
+  const itemPrice = games[itemIndex].price;
+
+  if (event.target.checked) {
+    setSelectedIndices(prev => [...prev, itemIndex].sort((a, b) => a - b));
+    setTotal(prevTotal => prevTotal + itemPrice);
+  } else {
+    setSelectedIndices(prev => prev.filter(item => item !== itemIndex));
+    setTotal(prevTotal => prevTotal - itemPrice);
+  }
+};
 
   if (isLoading) {
     return <div>Loading</div>; // Show loading message until data is fetched
@@ -56,7 +55,7 @@ function App() {
       </select>
       <br />
       {/* Display game details */}
-      <span>Developer: </span><span><b>{games[gamesIndex].devloper}</b></span>
+      <span>Developer: </span><span><b>{games[gamesIndex].developer}</b></span>
       <span>Publisher: </span><span><b>{games[gamesIndex].publisher}</b></span>
       <br />
       <span>Release Date: </span><span><b>{games[gamesIndex].date} </b></span>

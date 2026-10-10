@@ -24,14 +24,14 @@ createApp({
    },	
 
    methods: {
-      sort_games: function (event) {
-         // Sort selected game indices and update the total price
-         this.selectedIndices.sort(function (a, b) { return a - b });
-         if(event.target.checked){
-            this.total = this.total + this.games[this.gamesIndex].price; // Add price
-         }else{
-            this.total = this.total - this.total[this.gamesIndex].price; // Subtract price
-         }
-      },
+   updateTotal(index, event) {
+      this.selectedIndices.sort((a, b) => a - b);
+      const price = this.games[index].price;
+      if (event.target.checked) {
+         this.total += price;
+      } else {
+         this.total -= price;
+      }
    }
+}
 }).mount('#vue') // Mounts Vue app to the div with id 'vue'

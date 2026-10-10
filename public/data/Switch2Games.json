@@ -2,7 +2,7 @@
     "games": [
       {
         "title": "Mario Kart World",
-        "devloper": "Nintendo",
+        "developer": "Nintendo",
         "publisher": "Nintendo",
         "date": "6/5/25",
         "cover": "MarioKart.avif",
@@ -12,7 +12,7 @@
       },
       {
         "title": "Donkey Kong Bananza",
-        "devloper": "Nintendo",
+        "developer": "Nintendo",
         "publisher": "Nintendo",
         "date": "7/17/25",
         "cover": "DonkeyKong.avif",
@@ -22,7 +22,7 @@
       },
       {
         "title": "The Legend of Zelda",
-        "devloper": "Nintendo",
+        "developer": "Nintendo",
         "publisher": "Nintendo",
         "date": "6/5/25",
         "cover": "Zelda.avif",
@@ -32,7 +32,7 @@
       },
       {
         "title": "Kirby and The Forgotten Land",
-        "devloper": "Nintendo",
+        "developer": "Nintendo",
         "publisher": "Nintendo",
         "date": "8/28/25",
         "cover": "Kirby.avif",
@@ -42,7 +42,7 @@
       },
       {
         "title": "Madden NFL 26",
-        "devloper": "EA Sports",
+        "developer": "EA Sports",
         "publisher": "Electronic Arts",
         "date": "8/14/25",
         "cover": "Madden.avif",
@@ -52,7 +52,7 @@
       },
       {
         "title": "Split Fiction",
-        "devloper": "Hazelight Studios",
+        "devleoper": "Hazelight Studios",
         "publisher": "Electronic Arts",
         "date": "6/5/25",
         "cover": "Split.avif",
@@ -62,7 +62,7 @@
       },
       {
         "title": "Cyberpunk 2077",
-        "devloper": "CD Projekt Red",
+        "developer": "CD Projekt Red",
         "publisher": "CD Projekt Red",
         "date": "6/25/25",
         "cover": "Cyber.avif",
@@ -72,7 +72,7 @@
       },
       {
         "title": "Street Fighter 6",
-        "devloper": "Capcom",
+        "developer": "Capcom",
         "publisher": "Capcom",
         "date": "6/5/25",
         "cover": "Street.avif",
@@ -82,7 +82,7 @@
       },
       {
         "title": "Deltarune",
-        "devloper": "8-4",
+        "developer": "8-4",
         "publisher": "8-4",
         "date": "6/5/25",
         "cover": "Delta.avif",
@@ -92,7 +92,7 @@
       },
       {
         "title": "Yakuza 0",
-        "devloper": "Ryu ga Gotoku",
+        "developer": "Ryu ga Gotoku",
         "publisher": "Sega",
         "date": "6/5/25",
         "cover": "Yakuza.avif",
@@ -102,7 +102,7 @@
       },
       {
         "title": "HITMAN",
-        "devloper": "IO Interactive",
+        "developer": "IO Interactive",
         "publisher": "IO Interactive",
         "date": "6/5/25",
         "cover": "Hitman.avif",
@@ -112,7 +112,7 @@
       },
       {
         "title": "Sonic X Shadow Generations",
-        "devloper": "Sonic Team",
+        "developer": "Sonic Team",
         "publisher": "Sega",
         "date": "6/5/25",
         "cover": "Sonic.avif",

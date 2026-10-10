@@ -72,7 +72,7 @@
             </option>
         </select>
         <br />
-        <span>Developer: </span> &nbsp; <span><b>{{games[gamesIndex]?.devloper}}</b></span>
+        <span>Developer: </span> &nbsp; <span><b>{{games[gamesIndex]?.developer}}</b></span>
         <span>Publisher: </span> &nbsp; <span><b>{{games[gamesIndex]?.publisher}}</b></span>
         <br />
         <span>Release Date: </span><span><b>{{games[gamesIndex]?.date}} </b></span>
@@ -91,8 +91,8 @@
         <br />
         <h2>Add games to cart</h2>
         <!-- Loop to display checkboxes for each game -->
-        <span v-for="(aGame, index) in games" v-on:change="sort_games">
-            <input type="checkbox" :id="aGame.title" :value="index" v-model="selectedIndices">
+        <span v-for="(aGame, index) in games">
+            <input type="checkbox" :id="aGame.title" :value="index" v-model="selectedIndices" @change="updateTotal(index, $event)">
             <label :for="aGame.title">{{aGame.title}}</label>
             <br />
         </span>
