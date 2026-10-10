@@ -12,7 +12,7 @@ createApp({
    mounted() {}, 
    created() {
       console.log("created")
-      fetch('http://localhost:3000/data/Switch2Games.json') // Fetches game data
+      fetch('./data/Switch2Games.json') // Fetches game data
          .then(response => response.json())
          .then(data => {
             console.log(data);

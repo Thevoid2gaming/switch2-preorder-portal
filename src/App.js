@@ -11,7 +11,7 @@ function App() {
 
   //Fetch data from json
   useEffect(() => {
-    fetch('http://localhost:3000/data/Switch2Games.json')
+    fetch('./data/Switch2Games.json')
       .then(res => res.json())
       .then(data => {
         console.log(data["games"]);
